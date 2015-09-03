@@ -15,7 +15,14 @@ apt-get update
 apt-get -y install elixir
 
 # install node.js
-#curl --insecure --silent -L https://nodejs.org/dist/v0.12.7/node-v0.12.7-linux-x64.tar.gz  -O
-#tar xf node-v0.12.7-linux-x64.tar.gz -C /usr/local
-#apt-get nodejs
-apt-get nodejs-legacy
+curl --insecure --silent -L https://nodejs.org/dist/v0.12.7/node-v0.12.7-linux-x64.tar.gz  -O
+tar xf node-v0.12.7-linux-x64.tar.gz -C /usr/local
+ln -s /usr/local/node-v0.12.7-linux-x64/bin/node /usr/local/bin/node
+ln -s /usr/local/node-v0.12.7-linux-x64/bin/npm /usr/local/bin/npm
+
+#apt-get -y install nodejs-legacy
+
+
+# install PostgreSQL server
+apt-get -y install postgresql
+

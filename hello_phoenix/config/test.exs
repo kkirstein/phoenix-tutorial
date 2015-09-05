@@ -18,4 +18,5 @@ config :hello_phoenix, HelloPhoenix.Repo,
   username: "postgres",
   password: "postgres",
   database: "hello_phoenix_test",
+  hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

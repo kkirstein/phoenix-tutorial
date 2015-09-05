@@ -12,7 +12,7 @@ config :hello_phoenix, HelloPhoenix.Endpoint,
   code_reloader: true,
   cache_static_lookup: false,
   check_origin: false,
-  watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin"]]
+  watchers: []
 
 # Watch static and templates for browser reloading.
 config :hello_phoenix, HelloPhoenix.Endpoint,
@@ -38,4 +38,5 @@ config :hello_phoenix, HelloPhoenix.Repo,
   username: "postgres",
   password: "postgres",
   database: "hello_phoenix_dev",
+  hostname: "localhost",
   pool_size: 10

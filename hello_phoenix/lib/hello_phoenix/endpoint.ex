@@ -33,7 +33,7 @@ defmodule HelloPhoenix.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_hello_phoenix_key",
-    signing_salt: "9DPzLJ/9"
+    signing_salt: "HZgfd5xQ"
 
   plug HelloPhoenix.Router
 end

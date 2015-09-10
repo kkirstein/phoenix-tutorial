@@ -2,10 +2,12 @@
 
 # install and/or reload ntp daemon
 
-# TODO: configure timezone (tzdata)
-
 apt-get -y install ntp
 service ntp reload
+
+# setup correct timezone
+echo "Europe/Zurich" > /etc/timezone
+dpkg-reconfigure -f noninteractive tzdata
 
 #wget https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb && dpkg -i erlang-solutions_1.0_all.deb 
 curl --insecure --silent https://packages.erlang-solutions.com/erlang-solutions_1.0_all.deb -O
